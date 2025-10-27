@@ -1,7 +1,7 @@
 ==================================
 TRUdealz – Final Project Website
-Author: [Your Name]
-Date: [Submission Date]
+Author:Melissa Trujillo
+Date: still in progress
 ==================================
 
 Website Description:
@@ -38,3 +38,9 @@ A responsive, visually appealing webpage featuring:
 - A product grid with images, prices, and TikTok links.
 - About, Testimonials, and Contact sections.
 - A footer with social media link and copyright.
+
+- Validation Results:
+-------------------
+HTML file validated at https://validator.w3.org/ — No errors or warnings.
+CSS file validated at https://jigsaw.w3.org/css-validator/ — No errors or warnings.
+
