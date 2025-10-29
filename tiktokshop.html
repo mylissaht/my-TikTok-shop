@@ -1,79 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Discount Deals – Trendy & Affordable Finds</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Optional: small style for confirmation message */
+    .confirmation {
+      color: green;
+      font-weight: bold;
+      margin-top: 10px;
+      display: none;
+    }
+  </style>
 </head>
 <body>
-  <header role="banner">
+  <header>
     <h1>TRUdealz</h1>
     <p>Your destination for affordable, trendy, and useful products!</p>
-    <a href="https://vt.tiktok.com/ZTMQDudbr/?page=TikTokShop" target="_blank" rel="noopener noreferrer">Shop on TikTok</a>
+    <a href="https://www.tiktok.com/@2tru4you?lang=en" target="_blank" rel="noopener noreferrer">
+      Shop on TikTok
+    </a>
   </header>
 
   <main>
+    <!-- Featured Products Section -->
     <section aria-labelledby="featured-products">
       <h2 id="featured-products">Featured Products</h2>
       <div class="products">
+
         <article class="product">
-          <img src="https://via.placeholder.com/300x200" alt="Reusable Water Bottle" />
-          <h3>Reusable Water Bottle</h3>
-          <p>Eco-friendly and stylish, perfect for daily hydration.</p>
-          <span class="price">$8.99</span><br>
-          <a href="https://vt.tiktok.com/ZTMQDudbr/?page=TikTokShop" target="_blank" rel="noopener noreferrer">View on TikTok</a>
+          <img src="halloweenwreath.jpeg" alt="Happy Halloween Wreath">
+          <h3>Happy Halloween Wreath</h3>
+          <p>Happy Halloween Wreath for Front Door, 18” Artificial Ball Wreaths Door Decor for Home Halloween Party Decorations (18in).</p>
+          <span class="price">$49.99</span><br>
+          <a href="https://www.tiktok.com/@2tru4you?lang=en" target="_blank" rel="noopener noreferrer">
+            View on TikTok
+          </a>
         </article>
 
         <article class="product">
-          <img src="https://via.placeholder.com/300x200" alt="LED Desk Lamp" />
-          <h3>LED Desk Lamp</h3>
-          <p>Modern design with adjustable brightness levels.</p>
-          <span class="price">$14.99</span><br>
-          <a href="https://vt.tiktok.com/ZTMQDudbr/?page=TikTokShop" target="_blank" rel="noopener noreferrer">View on TikTok</a>
+          <img src="halloweentree.jpeg" alt="Happy Halloween Tree">
+          <h3>Happy Halloween Tree</h3>
+          <p>Modern design, cute, handmade Happy Halloween Tree.</p>
+          <span class="price">$100.99</span><br>
+          <a href="https://www.tiktok.com/@2tru4you?lang=en" target="_blank" rel="noopener noreferrer">
+            View on TikTok
+          </a>
         </article>
 
         <article class="product">
-          <img src="https://via.placeholder.com/300x200" alt="Wireless Earbuds" />
-          <h3>Wireless Earbuds</h3>
-          <p>Compact and affordable with great sound quality.</p>
-          <span class="price">$19.99</span><br>
-          <a href="https://vt.tiktok.com/ZTMQDudbr/?page=TikTokShop" target="_blank" rel="noopener noreferrer">View on TikTok</a>
+          <img src="carnosine.jpeg" alt="LifeWave Carnosine Patch">
+          <h3>LifeWave Carnosine Patch</h3>
+          <p>Embrace the vitality of movement with Y-Age Carnosine helping you ignite your passion for exercise and physical well-being as an integral part of your wellness journey. It's not just about keeping pace; it's about blazing a trail.</p>
+          <span class="price">$79.95</span><br>
+          <a href="https://www.tiktok.com/@2tru4you?lang=en" target="_blank" rel="noopener noreferrer">
+            View on TikTok
+          </a>
         </article>
+
       </div>
     </section>
 
+    <!-- About Section -->
     <section class="about" aria-labelledby="about">
       <h2 id="about">About Us</h2>
-      <p>At TruDealz, we believe in offering high-quality, practical, and trendy items at unbeatable prices. Our mission is to make smart shopping easy and fun—especially for the TikTok generation. Every purchase supports our small business, so thank you for shopping with us!</p>
+      <p>
+        At TruDealz, we believe in offering high-quality, practical, and trendy items at unbeatable prices.
+        Our mission is to make smart shopping easy and fun—especially for the TikTok generation.
+        Every purchase supports our small business, so thank you for shopping with us!
+      </p>
     </section>
 
+    <!-- Testimonials Section -->
     <section class="testimonials" aria-labelledby="testimonials">
       <h2 id="testimonials">Customer Testimonials</h2>
-      <blockquote>"I love how affordable and useful these items are! Will definitely buy again." – Sarah K.</blockquote>
-      <blockquote>"Fast shipping and great quality for the price!" – Mike D.</blockquote>
+      <blockquote>
+        "I love how affordable and useful these items are! Will definitely buy again." – Sarah K.
+      </blockquote>
+      <blockquote>
+        "Fast shipping and great quality for the price!" – Mike D.
+      </blockquote>
     </section>
 
+    <!-- Contact Section -->
     <section class="contact" aria-labelledby="contact">
       <h2 id="contact">Contact Us</h2>
-      <form aria-label="Contact form">
+      <form id="contactForm" onsubmit="sendEmail(event)">
         <label for="name">Your Name</label>
-        <input id="name" type="text" placeholder="Your Name" required />
+        <input id="name" type="text" placeholder="Your Name" required>
 
         <label for="email">Your Email</label>
-        <input id="email" type="email" placeholder="Your Email" required />
+        <input id="email" type="email" placeholder="Your Email" required>
 
         <label for="message">Your Message</label>
         <textarea id="message" rows="4" placeholder="Your Message"></textarea>
 
         <button type="submit">Send Message</button>
       </form>
+
+      <p id="confirmationMessage" class="confirmation">Your email app has been opened!</p>
+
+      <script>
+        function sendEmail(event) {
+          event.preventDefault(); // Prevent form from submitting normally
+
+          const name = document.getElementById('name').value;
+          const email = document.getElementById('email').value;
+          const message = document.getElementById('message').value;
+
+          const subject = encodeURIComponent(`Message from ${name}`);
+          const body = encodeURIComponent(`From: ${name} (${email})\n\nMessage:\n${message}`);
+
+          // Open the user's default email client
+          window.location.href = `mailto:mylissaht@yahoo.com?subject=${subject}&body=${body}`;
+
+          // Show confirmation message
+          const confirmation = document.getElementById('confirmationMessage');
+          confirmation.style.display = 'block';
+
+          // Clear form fields
+          document.getElementById('contactForm').reset();
+
+          // Hide the confirmation message after a few seconds
+          setTimeout(() => {
+            confirmation.style.display = 'none';
+          }, 5000);
+        }
+      </script>
     </section>
   </main>
 
-  <footer role="contentinfo">
-    <p>© 2025 TRUdealz | Follow us on 
-      <a href="https://vt.tiktok.com/ZTMQDUYR7/?page=TikTokShop" target="_blank" rel="noopener noreferrer">TikTok</a>
+  <footer>
+    <p>
+      © 2025 TRUdealz | Follow us on
+      <a href="https://vt.tiktok.com/ZTMQDUYR7/?page=TikTokShop" target="_blank" rel="noopener noreferrer">
+        TikTok
+      </a>
     </p>
   </footer>
 </body>
