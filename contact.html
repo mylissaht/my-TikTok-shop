@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us – TRUdealz</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Optional: style for confirmation message */
+    .confirmation {
+      color: green;
+      font-weight: bold;
+      margin-top: 10px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>TRUdealz</h1>
+    <p>Your destination for affordable, trendy, and useful products!</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Get in Touch</h2>
+      <p>
+        Have a question, comment, or special request?  
+        We’d love to hear from you! Fill out the form below to get in touch —  
+        or email us directly at  
+        <a href="mailto:mylissaht@yahoo.com">mylissaht@yahoo.com</a>.
+      </p>
+
+      <form id="contactForm" onsubmit="sendEmail(event)">
+        <label for="name">Your Name</label>
+        <input id="name" type="text" placeholder="Your Name" required>
+
+        <label for="email">Your Email</label>
+        <input id="email" type="email" placeholder="Your Email" required>
+
+        <label for="message">Your Message</label>
+        <textarea id="message" rows="4" placeholder="Your Message"></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+
+      <p id="confirmationMessage" class="confirmation">Your email app has been opened!</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      © 2025 TRUdealz | Follow us on
+      <a href="https://www.tiktok.com/@2tru4you?lang=en" target="_blank" rel="noopener nor_
+
+      
